@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 
 import Header from './Components/Header';
+import TransformersSection from './Containers/TransformersSection'
 
 export default class App extends React.Component {
   state = {
@@ -16,7 +17,8 @@ export default class App extends React.Component {
       {
         id: 307,
         name: 'beta',
-        url: 'https://library.kissclipart.com/20181004/jbw/kissclipart-alola-exeggutor-height-clipart-optimus-prime-trans-6afe73e9efab0cac.png' },
+        url: 'https://library.kissclipart.com/20181004/jbw/kissclipart-alola-exeggutor-height-clipart-optimus-prime-trans-6afe73e9efab0cac.png'
+      },
       {
         id: 9001,
         name: 'omega',
@@ -28,7 +30,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header logo={this.state.proptimusLogo} />
+        <TransformersSection proptimii={this.state.proptimii} />
       </div>
     );
   }

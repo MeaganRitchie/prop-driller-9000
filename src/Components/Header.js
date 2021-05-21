@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
 
   return (
     <header>
       <img
-        src = ""
-        alt = "logo"
+        src={props.logo}
+        alt="logo"
       />
     </header>
   );
